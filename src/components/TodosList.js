@@ -1,12 +1,6 @@
 import TodoItem from "./TodoItem";
 const TodosList = ({ todosProps, handleChange, delTodo, setUpdate }) => {
-    // const delTodo = (id) => {
-    //     setTodos([
-    //       ...todos.filter((todo) => {
-    //         return todo.id !== id;
-    //       }),
-    //     ]);
-    //   };
+   
       
     return (
       <ul>
@@ -15,9 +9,7 @@ const TodosList = ({ todosProps, handleChange, delTodo, setUpdate }) => {
            key={todo.id} 
            itemProp={todo}
            setUpdate={setUpdate}
-        //    handleChange={handleChange}
            delTodo={delTodo}
-        //    setTodos={setTodos} 
            />
         ))}
       </ul>
